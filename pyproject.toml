@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unmapjs"
+version = "1.0.0"
+description = "Recover source files from sourcemaps of any React, Next.js, Vite, or Webpack-based web application"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.8"
+authors = [
+    { name = "atiilla", email = "attilla@tuta.io" },
+]
+keywords = ["sourcemap", "react", "nextjs", "webpack", "vite", "reverse-engineering", "security", "recon"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Software Development :: Build Tools",
+]
+dependencies = ["requests"]
+
+[project.urls]
+Homepage = "https://github.com/atiilla/unmapjs"
+Repository = "https://github.com/atiilla/unmapjs"
+Issues = "https://github.com/atiilla/unmapjs/issues"
+
+[project.scripts]
+unmapjs = "unmapjs.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
