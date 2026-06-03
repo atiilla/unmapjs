@@ -1,5 +1,6 @@
 import re
 from pathlib import Path
+from urllib.parse import urlparse
 
 from .constants import SOURCE_PATH_PREFIXES
 from .ui import log_verbose
@@ -71,6 +72,7 @@ class SourceExtractor:
                 return None
 
         cleaned = cleaned.lstrip("./")
+        cleaned = urlparse(cleaned).path
 
         if not cleaned:
             return None
