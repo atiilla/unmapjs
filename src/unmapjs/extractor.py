@@ -58,6 +58,10 @@ class SourceExtractor:
     @staticmethod
     def clean_source_path(path):
         cleaned = path
+        # Strip query strings (e.g., ?react, ?v=123) which are invalid in filenames
+        if "?" in cleaned:
+            cleaned = cleaned.split("?")[0]
+
         for prefix in SOURCE_PATH_PREFIXES:
             if cleaned.startswith(prefix):
                 cleaned = cleaned[len(prefix):]
