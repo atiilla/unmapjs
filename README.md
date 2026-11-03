@@ -49,7 +49,7 @@ pip install unmapjs
 Or install from source:
 
 ```bash
-git clone https://github.com/atiilla/unmapjs.git
+git clone https://github.com/intelseclab/unmapjs.git
 cd unmapjs
 pip install .
 ```
