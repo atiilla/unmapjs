@@ -30,9 +30,9 @@ classifiers = [
 dependencies = ["requests"]
 
 [project.urls]
-Homepage = "https://github.com/atiilla/unmapjs"
-Repository = "https://github.com/atiilla/unmapjs"
-Issues = "https://github.com/atiilla/unmapjs/issues"
+Homepage = "https://github.com/intelseclab/unmapjs"
+Repository = "https://github.com/intelseclab/unmapjs"
+Issues = "https://github.com/intelseclab/unmapjs/issues"
 
 [project.scripts]
 unmapjs = "unmapjs.cli:main"
